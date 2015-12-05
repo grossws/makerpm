@@ -21,7 +21,7 @@ cleantree() {
 cleantree
 
 # internal repo
-REPO_ID=$(source /etc/os-release ; echo ${ID}/${VERSION_ID})
+REPO_ID=centos/6
 REPO=/makerpm/repo/${REPO_ID}/$(uname -m)
 mkdir -p ${REPO}
 createrepo ${REPO}
